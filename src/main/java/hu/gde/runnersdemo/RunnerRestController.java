@@ -60,6 +60,7 @@ public class RunnerRestController {
         }
     }
 
+
     @GetMapping("")
     public List<RunnerEntity> getAllRunners() {
         return runnerRepository.findAll();
