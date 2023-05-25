@@ -43,7 +43,7 @@ public class RunnerRestController {
     }
 
     @GetMapping("/maxheight")
-    public long getMaxAge() {
+    public long getMaxHeight() {
         List<RunnerEntity> runners = runnerRepository.findAll();
 
         if (!runners.isEmpty()) {
