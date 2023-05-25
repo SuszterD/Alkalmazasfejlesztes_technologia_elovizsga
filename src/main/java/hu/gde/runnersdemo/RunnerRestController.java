@@ -43,20 +43,19 @@ public class RunnerRestController {
     }
 
     @GetMapping("/maxheight")
-    public long getMaxHeight() {
+    public String getMaxHeight() {
         List<RunnerEntity> runners = runnerRepository.findAll();
 
         if (!runners.isEmpty()) {
-            long maxHeihgt = Integer.MIN_VALUE;
+            RunnerEntity max = runners.get(0);
             for (RunnerEntity runner : runners) {
-                long height = runner.getHeight();
-                if (height > maxHeihgt) {
-                    maxHeihgt = height;
+                if (runner.getHeight() > max.getHeight()) {
+                    max = runner;
                 }
             }
-            return maxHeihgt;
+            return max.getRunnerName();
         } else {
-            return -1;
+            return "";
         }
     }
 
