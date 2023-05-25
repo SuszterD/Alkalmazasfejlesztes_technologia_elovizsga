@@ -1,6 +1,6 @@
-Név:
-Szak:
-Neptun azonosító:
+Név: Suszter Dániel
+Szak: Mérnökinformatikus
+Neptun azonosító: LKKYI4
 
 Kérdés 1:
 Melyik szerepel az Agile Manifestoban az alábbiak közül?
